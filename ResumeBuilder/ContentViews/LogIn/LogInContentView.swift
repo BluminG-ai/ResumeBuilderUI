@@ -35,10 +35,8 @@ struct LogInContentView: View {
             Image(systemName: "person.crop.square.fill.and.at.rectangle")
                 .font(.system(size: 80)).foregroundColor(.accentColor)
             VStack(spacing: -5) {
-                Text("Resume").font(.system(size: 25, weight: .medium))
+                Text("Resume Builder").font(.system(size: 25, weight: .medium))
                     .foregroundColor(Color(#colorLiteral(red: 0.4078431373, green: 0.4078431373, blue: 0.4078431373, alpha: 1)))
-                Text("Builder").font(.system(size: 45, weight: .bold))
-                    .foregroundColor(.accentColor)
             }
         }
     }
@@ -46,7 +44,7 @@ struct LogInContentView: View {
     /// Bottom section view
     private var BottomSectionView: some View {
         VStack {
-            Text("Create your resume today\nwith just a few taps").italic()
+            Text("Create your professional resume today\nwith just a few clicks").italic()
                 .font(.system(size: 19, weight: .light))
                 .multilineTextAlignment(.center)
             VStack(spacing: 20) {

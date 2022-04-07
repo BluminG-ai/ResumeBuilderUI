@@ -7,7 +7,7 @@ target 'ResumeBuilder' do
 
   # Pods for ResumeBuilder
   pod 'Firebase/Auth'
-  pod 'GoogleSignIn'
+  pod 'GoogleSignIn', '~> 5.0.2'
   pod 'Google-Mobile-Ads-SDK'
 
 end

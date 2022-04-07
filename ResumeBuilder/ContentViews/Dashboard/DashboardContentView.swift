@@ -42,7 +42,7 @@ struct DashboardContentView: View {
     @ObservedObject var manager = PDFManager()
     @State private var selectedStep: TabViewItem = .about
     @State private var scrollViewProxy: ScrollViewProxy?
-    private let adMobAd = Interstitial()
+    // private let adMobAd = Interstitial()
     
     // MARK: - Main rendering function
     var body: some View {
@@ -52,7 +52,7 @@ struct DashboardContentView: View {
                     HStack {
                         Image(systemName: "person.crop.square.fill.and.at.rectangle")
                             .font(.system(size: 40))
-                        Text("Resume").font(.largeTitle).bold()
+                        Text("Resume Builder").font(.largeTitle).bold()
                         Spacer()
                     }.padding([.leading, .trailing], 20).offset(y: 20).opacity(0.8)
                     StepsViewSection
@@ -101,7 +101,7 @@ struct DashboardContentView: View {
                             selectedStep = TabViewItem.allCases[id]
                             withAnimation { value.scrollTo(id + 2) }
                             manager.saveCurrentDetails()
-                            adMobAd.showInterstitialAds()
+                            // adMobAd.showInterstitialAds()
                         }
                     })
                     Spacer(minLength: 15)
@@ -145,7 +145,7 @@ struct DashboardContentView: View {
                     withAnimation { scrollViewProxy?.scrollTo(nextIndex + 2) }
                 }
                 manager.saveCurrentDetails()
-                adMobAd.showInterstitialAds()
+                // adMobAd.showInterstitialAds()
             }, label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 30)

@@ -36,7 +36,7 @@ class Interstitial: NSObject {
     /// Default initializer of interstitial class
     override init() {
         super.init()
-        loadInterstitial()
+        // loadInterstitial()
     }
     
     /// Request AdMob Interstitial ads
