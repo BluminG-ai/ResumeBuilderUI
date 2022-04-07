@@ -1,6 +1,0 @@
-framework module Pods_ResumeBuilder {
-  umbrella header "Pods-ResumeBuilder-umbrella.h"
-
-  export *
-  module * { export * }
-}
